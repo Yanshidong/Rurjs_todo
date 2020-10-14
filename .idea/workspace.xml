@@ -3,8 +3,41 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="" />
+    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c0:初始化">
+      <change afterPath="$PROJECT_DIR$/app/Helper/Redprint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/common.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_012133_create_groups_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_012512_create_user_group_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_014622_create_tags_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_014819_create_todos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_085952_create_todo_orders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_090857_create_todo_tag_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_170446_create_todo_user_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +53,12 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
@@ -140,17 +179,28 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1imbvyukCQtiC9xSuTWk38DkmNU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shiyan\Learning\Rurjs_todo\app\Helper" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.server">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -182,11 +232,42 @@
       <workItem from="1602516573176" duration="3159000" />
       <workItem from="1602520819099" duration="4265000" />
       <workItem from="1602611486165" duration="720000" />
+      <workItem from="1602637817212" duration="2880000" />
+      <workItem from="1602649184377" duration="616000" />
+      <workItem from="1602662323171" duration="96000" />
+      <workItem from="1602663157670" duration="4059000" />
+      <workItem from="1602693879946" duration="70000" />
+      <workItem from="1602694727871" duration="7581000" />
     </task>
+    <task id="LOCAL-00001" summary="c0:初始化">
+      <created>1602637973673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602637973673</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="c0:初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="c0:初始化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="218" key="#Composer" timestamp="1602516012714">
@@ -201,6 +282,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1602524764360" />
+    <state x="446" y="41" key="#com.intellij.ide.util.MemberChooser" timestamp="1602702383642">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="41" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1602702383642" />
     <state x="221" y="0" key="#服务器" timestamp="1602520424564">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -257,17 +342,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1602520514036" />
-    <state x="467" y="263" key="NewPhpFileDialog" timestamp="1602519741387">
+    <state x="229" y="75" key="NewPhpClassDialog" timestamp="1602640262303">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="467" y="263" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1602519741387" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1602520995314">
+    <state x="229" y="75" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1602640262303" />
+    <state x="467" y="263" key="NewPhpFileDialog" timestamp="1602639084838">
       <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="467" y="263" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1602639084838" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1602663758964">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1602520995314" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1602663758964" />
     <state x="225" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602520530028">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="225" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1602520530027" />
+    <state x="0" y="0" width="611" height="680" key="find.popup" timestamp="1602697430834">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" width="611" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1602697430834" />
+    <state x="355" y="111" key="refactoring.ChangeSignatureDialog" timestamp="1602697947246">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="355" y="111" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1602697947246" />
   </component>
 </project>
