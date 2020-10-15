@@ -11,11 +11,15 @@ class Todo extends Model
 {
     use HasFactory;
 
+    protected $fillable=[
+        'name'
+    ];
     /**
      * 保存这个Todo Task
      * @param Todo $todo
      */
     public static function insertTodoTask(Todo $todo){
+        if($todo->doAt<1)$todo->doAt=strtotime('tomorrow')-1;
         $todo->save();
     }
 
