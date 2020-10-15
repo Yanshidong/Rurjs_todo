@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Todo;
 use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -15,6 +16,7 @@ class Controller extends BaseController
 
     public function healthy(Request $request,User $user){
         $count =$user->newQuery()->count();
+        $user->save([]);
         return "good:".$count;
     }
 }
