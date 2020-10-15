@@ -23,12 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c1:数据库转migrate，">
-      <change afterPath="$PROJECT_DIR$/app/Models/Todo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Todo.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,6 +228,8 @@
       <workItem from="1602694727871" duration="7946000" />
       <workItem from="1602724763490" duration="854000" />
       <workItem from="1602735803781" duration="4010000" />
+      <workItem from="1602747211603" duration="791000" />
+      <workItem from="1602748869658" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="c0:初始化">
       <created>1602637973673</created>
@@ -381,5 +379,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="355" y="111" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1602697947246" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1602747269382">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1602747269382" />
   </component>
 </project>
