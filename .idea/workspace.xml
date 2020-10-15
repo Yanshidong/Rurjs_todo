@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c1:数据库转migrate，">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Todo.php" afterDir="false" />
-    </list>
+    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c0:TodoModel 增删改，以及done,recover" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -229,7 +226,7 @@
       <workItem from="1602724763490" duration="854000" />
       <workItem from="1602735803781" duration="4010000" />
       <workItem from="1602747211603" duration="791000" />
-      <workItem from="1602748869658" duration="1133000" />
+      <workItem from="1602748869658" duration="1694000" />
     </task>
     <task id="LOCAL-00001" summary="c0:初始化">
       <created>1602637973673</created>
@@ -252,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602724808796</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="c0:TodoModel 增删改，以及done,recover">
+      <created>1602750241982</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602750241982</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +279,8 @@
     <MESSAGE value="c0:初始化" />
     <MESSAGE value="c1:数据库转migrate，" />
     <MESSAGE value="project settings changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="project settings changed" />
+    <MESSAGE value="c0:TodoModel 增删改，以及done,recover" />
+    <option name="LAST_COMMIT_MESSAGE" value="c0:TodoModel 增删改，以及done,recover" />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="218" key="#Composer" timestamp="1602516012714">
