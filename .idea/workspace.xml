@@ -22,8 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c4:TodoModel 单元测试">
-      <change beforePath="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" afterDir="false" />
+    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c5:删掉几个无用的引入">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TodoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +194,11 @@
       <recent name="C:\Users\shiyan\Learning\Rurjs_todo\app\Helper" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.TodoModelTest">
+  <component name="RunManager" selected="PHPUnit.ExampleTest.testBasicTest">
+    <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testBasicTest" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="TodoModelTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\TodoModelTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" scope="Class" />
       <method v="2" />
@@ -207,10 +213,6 @@
     </configuration>
     <configuration name="TodoModelTest.testRemoveTodoTask" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\TodoModelTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" method="testRemoveTodoTask" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TodoModelTest.testUpdateTodoTask" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\TodoModelTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" method="testUpdateTodoTask" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -229,18 +231,18 @@
       <item itemvalue="PHP Built-in Web Server.server" />
       <item itemvalue="PHPUnit.phpunit.xml" />
       <item itemvalue="PHPUnit.TodoModelTest.testInsertTodoTask" />
-      <item itemvalue="PHPUnit.TodoModelTest.testUpdateTodoTask" />
       <item itemvalue="PHPUnit.TodoModelTest.testRemoveTodoTask" />
       <item itemvalue="PHPUnit.TodoModelTest" />
       <item itemvalue="PHPUnit.TodoModelTest.testDone" />
+      <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
         <item itemvalue="PHPUnit.TodoModelTest" />
         <item itemvalue="PHPUnit.TodoModelTest.testDone" />
         <item itemvalue="PHPUnit.TodoModelTest.testRemoveTodoTask" />
         <item itemvalue="PHPUnit.TodoModelTest.testInsertTodoTask" />
-        <item itemvalue="PHPUnit.TodoModelTest.testUpdateTodoTask" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +272,7 @@
       <workItem from="1602761108620" duration="314000" />
       <workItem from="1602766519636" duration="1521000" />
       <workItem from="1602769631636" duration="13000" />
-      <workItem from="1602814036662" duration="8103000" />
+      <workItem from="1602814036662" duration="9534000" />
     </task>
     <task id="LOCAL-00001" summary="c0:初始化">
       <created>1602637973673</created>
@@ -328,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602822511800</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="c5:删掉几个无用的引入">
+      <created>1602822552400</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602822552400</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +365,8 @@
     <MESSAGE value="c2: Model层和Controller层的测试均要在FeatureTest下,写了个简单的测试添加，不过其他应填充数据没有填充，不知是否从controller访问也不自动填充" />
     <MESSAGE value="c3:修改migration，orders表添加与todo表外键关联，可能这个还需要与group关联！！" />
     <MESSAGE value="c4:TodoModel 单元测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="c4:TodoModel 单元测试" />
+    <MESSAGE value="c5:删掉几个无用的引入" />
+    <option name="LAST_COMMIT_MESSAGE" value="c5:删掉几个无用的引入" />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="218" key="#Composer" timestamp="1602516012714">
@@ -391,22 +401,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602518193588" />
-    <state width="1222" height="312" key="GridCell.Tab.0.bottom" timestamp="1602822426609">
+    <state width="1222" height="123" key="GridCell.Tab.0.bottom" timestamp="1602822697300">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="312" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602822426609" />
-    <state width="1222" height="312" key="GridCell.Tab.0.center" timestamp="1602822426609">
+    <state width="1222" height="123" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602822697300" />
+    <state width="1222" height="123" key="GridCell.Tab.0.center" timestamp="1602822697300">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="312" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602822426609" />
-    <state width="1222" height="312" key="GridCell.Tab.0.left" timestamp="1602822426609">
+    <state width="1222" height="123" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602822697300" />
+    <state width="1222" height="123" key="GridCell.Tab.0.left" timestamp="1602822697300">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="312" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602822426609" />
-    <state width="1222" height="312" key="GridCell.Tab.0.right" timestamp="1602822426609">
+    <state width="1222" height="123" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602822697300" />
+    <state width="1222" height="123" key="GridCell.Tab.0.right" timestamp="1602822697300">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="312" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602822426609" />
+    <state width="1222" height="123" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602822697300" />
     <state width="1222" height="184" key="GridCell.Tab.1.bottom" timestamp="1602819777441">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -476,9 +486,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="355" y="111" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1602697947246" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1602750874303">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1602822535547">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1602750874303" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1602822535547" />
   </component>
 </project>
