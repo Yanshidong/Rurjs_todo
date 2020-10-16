@@ -3,15 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Todo;
-use App\Models\User;
-use Brick\Math\BigInteger;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Log;
-use Ramsey\Uuid\Generator\PeclUuidRandomGenerator;
-use Ramsey\Uuid\UuidFactory;
 use Tests\TestCase;
 
 class TodoModelTest extends TestCase
