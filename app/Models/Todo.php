@@ -2,25 +2,34 @@
 
 namespace App\Models;
 
+use Brick\Math\BigInteger;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 use phpDocumentor\Reflection\Types\Array_;
 use phpDocumentor\Reflection\Types\Integer;
 
 class Todo extends Model
 {
     use HasFactory;
+    public $timestamps=true;
 
-    protected $fillable=[
+  protected $fillable=[
         'name'
     ];
+
+    /**
+     * 任务是否已完成
+     * @return bool
+     */
+  public function isDone():bool{ return $this->done_at>0;}
     /**
      * 保存这个Todo Task
      * @param Todo $todo
      */
     public static function insertTodoTask(Todo $todo){
-        if($todo->doAt<1)$todo->doAt=strtotime('tomorrow')-1;
-        $todo->save();
+        if($todo->do_at<1)$todo->do_at=strtotime('tomorrow')-1;
+        return $todo->save();
     }
 
     /**
@@ -41,17 +50,24 @@ class Todo extends Model
     }
     /**
      * 已完成Todo
-     * @param Integer $todoId
+     * @param int $todoId
      */
-    public static function done(Integer $todoId){
-        Todo::query()->find($todoId)->save(['done_at'=>time()]);
+    public static function done(int $todoId){
+        Log::debug('完成任务:'.$todoId);
+        $user=Todo::query()->find($todoId);
+        $user->done_at=time();
+        $user->save();
+        return Todo::query()->find($todoId);
     }
 
     /**
      * 恢复Todo
      * @param Integer $todoId
      */
-    public static function recover(Integer $todoId){
-        Todo::query()->find($todoId)->save(['done_at'=>0]);
+    public static function recover(int $todoId){
+        $user = Todo::query()->find($todoId);
+        $user->done_at = 0;
+        $user->save();
+        return $user;
     }
 }

@@ -22,12 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c1: ignore">
-      <change afterPath="$PROJECT_DIR$/.env.testing" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/Models/TodoTest.php" afterDir="false" />
+    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c2: Model层和Controller层的测试均要在FeatureTest下,写了个简单的测试添加，不过其他应填充数据没有填充，不知是否从controller访问也不自动填充">
+      <change afterPath="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Todo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_14_085952_create_todo_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_085952_create_todo_orders_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rurjs.init.db.migrate.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rurjs.init.db.migrate.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Models/TodoTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,21 +200,25 @@
       <recent name="C:\Users\shiyan\Learning\Rurjs_todo\app\Helper" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.ExampleTest.testTest">
-    <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/ExampleTest.php" method="testBasicTest" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.TodoModelTest.testDone">
+    <configuration name="TodoModelTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TodoModelTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleTest.testTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testTest" scope="Method" />
+    <configuration name="TodoModelTest.testDone" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TodoModelTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" method="testDone" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="TodoTest.testExample" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\Models\TodoTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/Models/TodoTest.php" method="testExample" scope="Method" />
+    <configuration name="TodoModelTest.testInsertTodoTask" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TodoModelTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" method="testInsertTodoTask" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="TodoTest.testInsert" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Models\TodoTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/Models/TodoTest.php" method="testInsert" scope="Method" />
+    <configuration name="TodoModelTest.testRemoveTodoTask" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TodoModelTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" method="testRemoveTodoTask" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoModelTest.testUpdateTodoTask" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TodoModelTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TodoModelTest.php" method="testUpdateTodoTask" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -228,17 +236,19 @@
     <list>
       <item itemvalue="PHP Built-in Web Server.server" />
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.TodoTest.testInsert" />
-      <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
-      <item itemvalue="PHPUnit.TodoTest.testExample" />
-      <item itemvalue="PHPUnit.ExampleTest.testTest" />
+      <item itemvalue="PHPUnit.TodoModelTest.testInsertTodoTask" />
+      <item itemvalue="PHPUnit.TodoModelTest.testUpdateTodoTask" />
+      <item itemvalue="PHPUnit.TodoModelTest.testRemoveTodoTask" />
+      <item itemvalue="PHPUnit.TodoModelTest" />
+      <item itemvalue="PHPUnit.TodoModelTest.testDone" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.ExampleTest.testTest" />
-        <item itemvalue="PHPUnit.TodoTest.testExample" />
-        <item itemvalue="PHPUnit.TodoTest.testInsert" />
-        <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
+        <item itemvalue="PHPUnit.TodoModelTest.testDone" />
+        <item itemvalue="PHPUnit.TodoModelTest" />
+        <item itemvalue="PHPUnit.TodoModelTest.testRemoveTodoTask" />
+        <item itemvalue="PHPUnit.TodoModelTest.testInsertTodoTask" />
+        <item itemvalue="PHPUnit.TodoModelTest.testUpdateTodoTask" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +273,12 @@
       <workItem from="1602724763490" duration="854000" />
       <workItem from="1602735803781" duration="4010000" />
       <workItem from="1602747211603" duration="791000" />
-      <workItem from="1602748869658" duration="5202000" />
+      <workItem from="1602748869658" duration="5966000" />
+      <workItem from="1602755366289" duration="574000" />
+      <workItem from="1602761108620" duration="314000" />
+      <workItem from="1602766519636" duration="1521000" />
+      <workItem from="1602769631636" duration="13000" />
+      <workItem from="1602814036662" duration="7455000" />
     </task>
     <task id="LOCAL-00001" summary="c0:初始化">
       <created>1602637973673</created>
@@ -300,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602750837102</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="c2: Model层和Controller层的测试均要在FeatureTest下,写了个简单的测试添加，不过其他应填充数据没有填充，不知是否从controller访问也不自动填充">
+      <created>1602754177472</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602754177472</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,13 +347,18 @@
     <MESSAGE value="project settings changed" />
     <MESSAGE value="c0:TodoModel 增删改，以及done,recover" />
     <MESSAGE value="c1: ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="c1: ignore" />
+    <MESSAGE value="c2: Model层和Controller层的测试均要在FeatureTest下,写了个简单的测试添加，不过其他应填充数据没有填充，不知是否从controller访问也不自动填充" />
+    <option name="LAST_COMMIT_MESSAGE" value="c2: Model层和Controller层的测试均要在FeatureTest下,写了个简单的测试添加，不过其他应填充数据没有填充，不知是否从controller访问也不自动填充" />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="218" key="#Composer" timestamp="1602516012714">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="443" y="218" key="#Composer/0.0.1280.680@0.0.1280.680" timestamp="1602516012714" />
+    <state x="330" y="109" key="#Log_Highlighting_(ideolog)" timestamp="1602819991472">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="330" y="109" key="#Log_Highlighting_(ideolog)/0.0.1280.680@0.0.1280.680" timestamp="1602819991472" />
     <state x="408" y="0" key="#PHP" timestamp="1602516707726">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -344,10 +371,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="41" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1602702383642" />
-    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602753124840">
+    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602817896944">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1602753124840" />
+    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1602817896944" />
     <state x="221" y="0" key="#服务器" timestamp="1602520424564">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -356,38 +383,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602518193588" />
-    <state width="1222" height="93" key="GridCell.Tab.0.bottom" timestamp="1602753662200">
+    <state width="1222" height="312" key="GridCell.Tab.0.bottom" timestamp="1602821490427">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="93" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602753662200" />
-    <state width="1222" height="93" key="GridCell.Tab.0.center" timestamp="1602753662200">
+    <state width="1222" height="312" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602821490427" />
+    <state width="1222" height="312" key="GridCell.Tab.0.center" timestamp="1602821490427">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="93" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602753662200" />
-    <state width="1222" height="93" key="GridCell.Tab.0.left" timestamp="1602753662199">
+    <state width="1222" height="312" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602821490427" />
+    <state width="1222" height="312" key="GridCell.Tab.0.left" timestamp="1602821490427">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="93" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602753662199" />
-    <state width="1222" height="93" key="GridCell.Tab.0.right" timestamp="1602753662200">
+    <state width="1222" height="312" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602821490427" />
+    <state width="1222" height="312" key="GridCell.Tab.0.right" timestamp="1602821490427">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="93" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602753662200" />
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1602520514036">
+    <state width="1222" height="312" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602821490427" />
+    <state width="1222" height="184" key="GridCell.Tab.1.bottom" timestamp="1602819777441">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602520514036" />
-    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1602520514036">
+    <state width="1222" height="184" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602819777441" />
+    <state width="1222" height="184" key="GridCell.Tab.1.center" timestamp="1602819777441">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1602520514036" />
-    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1602520514036">
+    <state width="1222" height="184" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1602819777441" />
+    <state width="1222" height="184" key="GridCell.Tab.1.left" timestamp="1602819777441">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1602520514036" />
-    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1602520514036">
+    <state width="1222" height="184" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1602819777441" />
+    <state width="1222" height="184" key="GridCell.Tab.1.right" timestamp="1602819777441">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1602520514036" />
+    <state width="1222" height="184" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1602819777441" />
     <state width="1237" height="204" key="GridCell.Tab.2.bottom" timestamp="1602520514036">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -417,14 +444,18 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1602520995314" />
     <state x="142" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1602663758964" />
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1602750846727">
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1602754180834">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1602750846727" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1602754180834" />
     <state x="225" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602520530028">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="225" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1602520530027" />
+    <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1602815400909">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1602815400909" />
     <state x="394" y="129" width="644" height="517" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1602751468812">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -441,5 +472,16 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1602750874303" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/TodoModelTest.php</url>
+          <line>63</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

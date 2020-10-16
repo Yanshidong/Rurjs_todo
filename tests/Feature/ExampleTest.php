@@ -21,9 +21,11 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function testTest(Todo $todo)
+    public function testTest()
     {
-        $todo->name='第二次添加';
-        $this->assertTrue(Todo::insertTodoTask($todo));
+
     }
+
+
+
 }
