@@ -77,9 +77,11 @@ class TodoModelTest extends TestCase
     public function testRecover()
     {
         $userPrepare = $this->testInsertTodoTask();
-        $userDone = Todo::done($userPrepare->id);
-        $userRecover = Todo::recover($userPrepare->id);
+        Todo::done($userPrepare->id);
+        Todo::recover($userPrepare->id);
         $user = Todo::query()->find($userPrepare->id);
+        $this->assertFalse($user->isDone());
     }
+
 
 }
