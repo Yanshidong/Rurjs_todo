@@ -22,6 +22,12 @@ class ExampleTest extends TestCase
     }
 
 
+    public function testMapMethod(){
+        $arr=[1,2,3,4];
+        $res = array_map(function ($a){return $a+10;},$arr);
+        print_r($res);
+    }
 
 
 }
+

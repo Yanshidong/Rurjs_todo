@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Log;
 use phpDocumentor\Reflection\Types\Array_;
 use phpDocumentor\Reflection\Types\Integer;
 
-class Todo extends Model
+class Todo extends RedModel
 {
     use HasFactory;
     public $timestamps=true;
@@ -29,7 +29,8 @@ class Todo extends Model
      */
     public static function insertTodoTask(Todo $todo){
         if($todo->do_at<1)$todo->do_at=strtotime('tomorrow')-1;
-        return $todo->save();
+         $todo->save();
+         return $todo::query()->find($todo->id);
     }
 
     /**
@@ -37,7 +38,8 @@ class Todo extends Model
      * @param array $todo
      */
     public static function updateTodoTask(array $todo){
-        Todo::query()->find($todo['id'])->update($todo);
+        Todo::findOrException($todo['id'])->update($todo);
+        return Todo::query()->find($todo['id']);
     }
 
     /**
@@ -46,7 +48,7 @@ class Todo extends Model
      * @throws \Exception
      */
     public static function removeTodoTask(int $id){
-        Todo::query()->find($id)->delete();
+        return Todo::findOrException($id)->delete();
     }
     /**
      * 已完成Todo
@@ -65,9 +67,18 @@ class Todo extends Model
      * @param Integer $todoId
      */
     public static function recover(int $todoId){
-        $user = Todo::query()->find($todoId);
+        $user = Todo::findOrException($todoId);
         $user->done_at = 0;
         $user->save();
         return $user;
+    }
+
+    public static function getListWithPage(Todo $search){
+        $query=Todo::rjs_like('name',$search->name);
+        if($search->done_at)$query->where('done_at','>',$search->done_at);
+        if($search->do_at)$query->where('do_at','>=',$search->do_at);
+        if($search->do_from)$query->where('do_from','<=',$search->do_from);
+        return $query->orderByDesc(self::$name_created_at)
+            ->paginate(self::pageLimit());
     }
 }
