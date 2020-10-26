@@ -22,20 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c6:创建TodoAPI层.">
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/RedAPIException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Helper/RedCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Helper/RedResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/Request/TodoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/UserAPI.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/RedModel.php" afterDir="false" />
+    <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c7:todo 控制器完成.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TodoAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TodoAPI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Todo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helper/RedCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helper/RedCode.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +279,10 @@
       <workItem from="1603001878870" duration="1704000" />
       <workItem from="1603003596000" duration="2746000" />
       <workItem from="1603033085716" duration="6981000" />
-      <workItem from="1603070212350" duration="9237000" />
+      <workItem from="1603070212350" duration="9508000" />
+      <workItem from="1603273707855" duration="1432000" />
+      <workItem from="1603278123656" duration="1808000" />
+      <workItem from="1603424596192" duration="2827000" />
     </task>
     <task id="LOCAL-00001" summary="c0:初始化">
       <created>1602637973673</created>
@@ -362,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602824564824</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="c7:todo 控制器完成.">
+      <created>1603079940618</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603079940618</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +391,8 @@
     <MESSAGE value="c4:TodoModel 单元测试" />
     <MESSAGE value="c5:删掉几个无用的引入" />
     <MESSAGE value="c6:创建TodoAPI层." />
-    <option name="LAST_COMMIT_MESSAGE" value="c6:创建TodoAPI层." />
+    <MESSAGE value="c7:todo 控制器完成." />
+    <option name="LAST_COMMIT_MESSAGE" value="c7:todo 控制器完成." />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="218" key="#Composer" timestamp="1602516012714">
@@ -432,25 +432,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602518193588" />
-    <state width="1237" height="143" key="GridCell.Tab.0.bottom" timestamp="1603071858591">
+    <state width="1237" height="143" key="GridCell.Tab.0.bottom" timestamp="1603080017167">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="143" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603071858591" />
+    <state width="1237" height="143" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603080017167" />
     <state width="1877" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603007415252" />
-    <state width="1237" height="143" key="GridCell.Tab.0.center" timestamp="1603071858591">
+    <state width="1237" height="143" key="GridCell.Tab.0.center" timestamp="1603080017167">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="143" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603071858591" />
+    <state width="1237" height="143" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603080017167" />
     <state width="1877" height="250" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603007415252" />
-    <state width="1237" height="143" key="GridCell.Tab.0.left" timestamp="1603071858591">
+    <state width="1237" height="143" key="GridCell.Tab.0.left" timestamp="1603080017167">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="143" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603071858591" />
+    <state width="1237" height="143" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603080017167" />
     <state width="1877" height="250" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603007415252" />
-    <state width="1237" height="143" key="GridCell.Tab.0.right" timestamp="1603071858591">
+    <state width="1237" height="143" key="GridCell.Tab.0.right" timestamp="1603080017167">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="143" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603071858591" />
+    <state width="1237" height="143" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603080017167" />
     <state width="1877" height="250" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603007415252" />
     <state width="1222" height="184" key="GridCell.Tab.1.bottom" timestamp="1602835693648">
       <screen x="0" y="0" width="1280" height="680" />
@@ -498,10 +498,10 @@
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1602829006653" />
     <state x="142" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1602663758964" />
     <state x="213" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603003524660" />
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1602824569663">
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1603079982613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1602824569663" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603079982613" />
     <state x="225" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602520530028">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -522,10 +522,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="355" y="111" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1602697947246" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1602822535547">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1603425504074">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1602822535547" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1603425504074" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -534,6 +534,11 @@
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Controller.php</url>
           <line>26</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Helper/RedCode.php</url>
+          <line>35</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
