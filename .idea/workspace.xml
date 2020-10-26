@@ -24,7 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2658841e-3fde-40b6-940d-84a0c3bad5a8" name="Default Changelist" comment="c7:todo 控制器完成.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helper/RedCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helper/RedCode.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,6 +282,8 @@
       <workItem from="1603273707855" duration="1432000" />
       <workItem from="1603278123656" duration="1808000" />
       <workItem from="1603424596192" duration="2827000" />
+      <workItem from="1603681119893" duration="21000" />
+      <workItem from="1603681164356" duration="133000" />
     </task>
     <task id="LOCAL-00001" summary="c0:初始化">
       <created>1602637973673</created>
