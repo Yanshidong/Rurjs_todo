@@ -102,7 +102,7 @@ class RedResponse  extends Model
         return [
             'code'=>$this->getCode(),
             'msg'=>
-                $this->i18n?$this->getI18nMsg().$this->getMsg():$this->getMsg(),
+                $this->i18n?$this->getMsg():$this->getMsg(),
             'data'=>$this->getData()];
     }
 
